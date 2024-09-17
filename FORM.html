@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<title>Verification Form</title>
+<style>
+    h1 {
+        text-shadow: 2px 2px 5px grey;
+        text-align: center;
+    }
+
+    body {
+        background: whitesmoke;
+        font-family: Arial, sans-serif;
+    }
+
+    form {
+        margin: 20px auto;
+        width: 50%;
+        padding: 20px;
+        box-shadow: 5px 5px 15px rgba(10, 3, 218, 0.5);
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    input[type="textarea"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"] {
+        display: block;
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.2s, border-color 0.2s;
+    }
+
+    input[type="text"]:hover, 
+    input[type="email"]:hover, 
+    input[type="number"]:hover, 
+    input[type="password"]:hover, 
+    textarea:hover, 
+    input[type="file"]:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-color: #007bff;
+    }
+
+    input[type="text"]:focus, 
+    input[type="email"]:focus, 
+    input[type="number"]:focus, 
+    textarea:focus, 
+    input[type="file"]:focus {
+        transform: scale(1.05);
+        border-color: #007bff;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        margin-right: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background: linear-gradient(to right, darkgreen, rgb(16, 196, 16));
+        transform: scale(1.075);
+    }
+
+    input[type="reset"]:hover {
+        background: linear-gradient(to right, darkred, rgb(206, 22, 22));
+        transform: scale(1.075);
+    }
+</style>
+</head>
+<body>
+<h1>Registration FORM</h1>
+<form action="#">
+
+    <!-- Adding link to the image -->
+    <a href="https://www.gcet.ac.in/index.php" target="_blank">
+        <input type="image" src="Gcet.jpg" height="100" width="100" alt="GCET Logo">
+    </a>
+    
+    <p>FIRST NAME: <input type="text" name="fname" placeholder="FIRSTNAME" required></p>
+    <p>MID NAME: <input type="text" name="mname" placeholder="MIDNAME" required></p>
+    <p>LAST NAME: <input type="text" name="lname" placeholder="LASTNAME" required></p>
+    <p>EMAIL: <input type="email" name="email" placeholder="abc@gmail.com" required></p>
+    <p>CONTACT NO.: <input type="number" name="contact" placeholder="9999999999" required></p>
+
+    <div class="button-container">
+        <input type="reset">
+        <input type="submit">
+    </div>
+
+</form>
+</body>
+</html>
